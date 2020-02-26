@@ -5,11 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Index</title>
+    <style type="text/css">
+        .style1
+        {
+            color: #990033;
+        }
+    </style>
 </head>
 <body>
     <div>
-        <h1>
-            Bienvenidos! </h1>
+        <h1 style="color: #000066"> Opciones  </h1>
+        <hr />  
+        <a href="/Video/IndexVideos" class="style1">Ver video</a>
+        <br class="style1" />  
+        <a href="/Agregar/IndexAgregar"><span class="style1">Agregar video</span></a>
+        <br class="style1" />  
+        <a href="/Eliminar/IndexEliminar"><span class="style1">Eliminar video</span></a>
+        <br class="style1" />  
+        <a href="/Modificar/IndexModificar"><span class="style1">Modificar video</span></a>
+
     </div>
 </body>
 </html>
