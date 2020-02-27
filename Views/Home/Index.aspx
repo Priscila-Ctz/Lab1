@@ -16,13 +16,13 @@
     <div>
         <h1 style="color: #000066"> Opciones  </h1>
         <hr />  
-        <a href="/Video/IndexVideos" class="style1">Ver video</a>
+        <a href="/Video/Ver" class="style1">Ver video</a>
         <br class="style1" />  
-        <a href="/Agregar/IndexAgregar"><span class="style1">Agregar video</span></a>
+        <a href="/Agregar/AgregarVideo"><span class="style1">Agregar video</span></a>
         <br class="style1" />  
-        <a href="/Eliminar/IndexEliminar"><span class="style1">Eliminar video</span></a>
+        <a href="/Eliminar/EliminarVideo"><span class="style1">Eliminar video</span></a>
         <br class="style1" />  
-        <a href="/Modificar/IndexModificar"><span class="style1">Modificar video</span></a>
+        <a href="/Modificar/ModificarVideo"><span class="style1">Modificar video</span></a>
 
     </div>
 </body>

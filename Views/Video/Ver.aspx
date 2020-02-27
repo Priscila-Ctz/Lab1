@@ -7,17 +7,17 @@
     <title>Lista de Videos</title>
 </head>
 <body>
+    <a href="/Home"> ↞ Volver al menú ↞</a>
+    <br />  
+    <h1 style="background-color:#33BEFF;"> Videos enlistados: </h1>
 
-        <h1> Videos enlistados: </h1>
-
-        <% foreach (System.Data.DataRow ren in ((System.Data.DataTable) ViewData ["video"]).Rows)  
+        <% foreach (System.Data.DataRow ren in ((System.Data.DataTable) ViewData ["videos"]).Rows)  
            { %>
            
-             <p>  <%: ren["video"].ToString() %> </p>
+             <p>  <%: ren["titulo"].ToString() %> </p>
 
         <% }
              %>
 
-
-        </body>
+</body>
 </html>

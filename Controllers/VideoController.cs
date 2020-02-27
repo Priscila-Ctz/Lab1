@@ -15,9 +15,25 @@ namespace MvcPlantilla.Controllers
         //
         // GET: /Video/
 
-        public ActionResult Videos()
+        public ActionResult Ver()
         {
-            ViewData["video"] = BaseHelper.ejecutarConsulta("SELECT * from videos", CommandType.Text);
+            ViewData["videos"] = BaseHelper.ejecutarConsulta("SELECT * from videos", CommandType.Text);
+                    
+            return View();
+        }
+
+        public ActionResult Agregar()
+        {
+            return View();
+        }
+
+        public ActionResult Eliminar()
+        {
+            return View();
+        }
+
+        public ActionResult Modificar()
+        {
             return View();
         }
 
