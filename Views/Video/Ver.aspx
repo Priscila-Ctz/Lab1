@@ -5,16 +5,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Lista de Videos</title>
+    <style type="text/css">
+        .style2
+        {
+            font-weight: normal;
+            color: #FFFFFF;
+            background-color: #33BEFF;
+        }
+    </style>
 </head>
 <body>
-    <a href="/Home"> ↞ Volver al menú ↞</a>
+    <a href="/Home"> ↞ Volver al menú 🏡</a>
     <br />  
-    <h1 style="background-color:#33BEFF;"> Videos enlistados: </h1>
+    <h1 class="style2"> <strong>Videos enlistados: </strong> </h1>
 
         <% foreach (System.Data.DataRow ren in ((System.Data.DataTable) ViewData ["videos"]).Rows)  
            { %>
            
-             <p>  <%: ren["titulo"].ToString() %> </p>
+             <ul>
+                 <li style="background-color: #D0E8FF">  <%: ren["titulo"].ToString() %> </li>
+    </ul>
 
         <% }
              %>

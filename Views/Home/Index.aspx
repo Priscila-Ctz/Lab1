@@ -14,15 +14,15 @@
 </head>
 <body>
     <div>
-        <h1 style="color: #000066"> Opciones  </h1>
-        <hr />  
-        <a href="/Video/Ver" class="style1">Ver video</a>
+        <h1 style="color: #FFFFFF; height: 48px; background-color: #3399FF;"> 🌼 Opciones  </h1>
+
+        <a href="/Video/Ver" class="style1">⇢Ver video</a>
         <br class="style1" />  
-        <a href="/Agregar/AgregarVideo"><span class="style1">Agregar video</span></a>
+        <a href="/Video/AgregarVideo"><span class="style1">⇢Agregar video</span></a>
         <br class="style1" />  
-        <a href="/Eliminar/EliminarVideo"><span class="style1">Eliminar video</span></a>
+        <a href="/Video/EliminarVideo"><span class="style1">⇢Eliminar video</span></a>
         <br class="style1" />  
-        <a href="/Modificar/ModificarVideo"><span class="style1">Modificar video</span></a>
+        <a href="/Video/ModificarVideo"><span class="style1">⇢Modificar video</span></a>
 
     </div>
 </body>

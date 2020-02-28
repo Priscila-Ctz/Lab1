@@ -22,17 +22,17 @@ namespace MvcPlantilla.Controllers
             return View();
         }
 
-        public ActionResult Agregar()
+        public ActionResult AgregarVideo()
         {
             return View();
         }
 
-        public ActionResult Eliminar()
+        public ActionResult EliminarVideo()
         {
             return View();
         }
 
-        public ActionResult Modificar()
+        public ActionResult ModificarVideo()
         {
             return View();
         }
