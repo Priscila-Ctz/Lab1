@@ -79,6 +79,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Video\AgregarVideo.aspx" />
+    <Content Include="Views\Video\Eliminado.aspx" />
     <Content Include="Views\Video\EliminarVideo.aspx" />
     <Content Include="Views\Video\ModificarVideo.aspx" />
     <Content Include="Views\Video\Ver.aspx" />

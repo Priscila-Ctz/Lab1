@@ -27,9 +27,22 @@ namespace MvcPlantilla.Controllers
             return View();
         }
 
+        public ActionResult eliminado()
+        {
+            return View();
+        }
         public ActionResult EliminarVideo()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult EliminarVideo(int idvideo)
+        {
+            List<SqlParameter> Parametros = new List<SqlParameter>();
+            Parametros.Add(new SqlParameter("@idvideo",idvideo));
+
+            BaseHelper.ejecutarSentencia("DELETE FROM videos WHERE idvideo = @idvideo", CommandType.Text, Parametros);
+            return View("eliminado");
         }
 
         public ActionResult ModificarVideo()
