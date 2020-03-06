@@ -7,3 +7,4 @@ C:\Users\usuario\Desktop\MVCPlantilla\bin\MvcPlantilla.dll
 C:\Users\usuario\Desktop\MVCPlantilla\bin\MvcPlantilla.pdb
 C:\Users\usuario\Desktop\MVCPlantilla\obj\Debug\MvcPlantilla.dll
 C:\Users\usuario\Desktop\MVCPlantilla\obj\Debug\MvcPlantilla.pdb
+C:\Users\usuario\Desktop\MVCPlantilla\obj\Debug\MvcPlantilla.csprojResolveAssemblyReference.cache

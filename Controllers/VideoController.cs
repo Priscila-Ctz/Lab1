@@ -14,7 +14,8 @@ namespace MvcPlantilla.Controllers
     {
         //
         // GET: /Video/
-
+//()()()()()()()()()()()()()()()()()()()()()()VER()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+       
         public ActionResult Ver()
         {
             ViewData["videos"] = BaseHelper.ejecutarConsulta("SELECT * from videos", CommandType.Text);
@@ -22,11 +23,28 @@ namespace MvcPlantilla.Controllers
             return View();
         }
 
-        public ActionResult AgregarVideo()
+//()()()()()()()()()()()()()()()()()()()()()()()AGREGAR()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+       
+        public ActionResult Agregado()
         {
+            ViewData["videos"] = BaseHelper.ejecutarConsulta("SELECT * FROM videos", CommandType.Text);
             return View();
         }
+        [HttpPost]
+        public ActionResult AgregarVideo(int idvideo, string titulo, int reproducciones, string url)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter ("@idvideo", idvideo));
+            parametros.Add(new SqlParameter ("@titulo", titulo));
+            parametros.Add(new SqlParameter("@reproducciones", reproducciones));
+            parametros.Add(new SqlParameter ("@url", url));
 
+            BaseHelper.ejecutarSentencia("INSERT INTO videos VALUES (@idvideo,@titulo, @url)",CommandType.Text, parametros);
+            return View("Agregado");
+        }
+
+//()()()()()()()()()()()()()()()()()()()()()()()ELIMINAR()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+       
         public ActionResult eliminado()
         {
             return View();
@@ -45,6 +63,8 @@ namespace MvcPlantilla.Controllers
             return View("eliminado");
         }
 
+//()()()()()()()()()()()()()()()()()()()()()()()MODIFICAR()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+        
         public ActionResult ModificarVideo()
         {
             return View();

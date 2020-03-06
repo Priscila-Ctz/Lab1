@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Data;
 using System.Data.SqlClient;
 using MVCPlantilla;
+using MVCPlantilla.Utilerias;
 
 namespace MvcPlantilla.Controllers
 {

@@ -26,6 +26,7 @@
                  <li style="background-color: #D0E8FF">  <%: ren["idvideo"].ToString()  %> </li>
                  <li style="background-color: #D0E8FF">  <%: ren["titulo"].ToString()  %> </li>
                  <li style="background-color: #D0E8FF">  <%: ren["url"].ToString()  %> </li>
+                 <li style="background-color: #D0E8FF">  <%: ren["reproducciones"].ToString()  %> </li>
     </ul>
 
         <% }

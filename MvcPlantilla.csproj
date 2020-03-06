@@ -78,12 +78,15 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Video\Agregado.aspx" />
     <Content Include="Views\Video\AgregarVideo.aspx" />
     <Content Include="Views\Video\Eliminado.aspx" />
     <Content Include="Views\Video\EliminarVideo.aspx" />
     <Content Include="Views\Video\ModificarVideo.aspx" />
     <Content Include="Views\Video\Ver.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -102,7 +105,7 @@
     <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Video\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
